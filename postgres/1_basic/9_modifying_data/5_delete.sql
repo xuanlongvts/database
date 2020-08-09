@@ -1,0 +1,9 @@
+DELETE FROM links
+WHERE id = 10
+RETURNING *
+
+DELETE FROM links
+WHERE id IN (5, 6)
+RETURNING *
+
+-- DELETE FROM links
