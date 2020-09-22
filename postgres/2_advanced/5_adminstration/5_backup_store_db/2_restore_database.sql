@@ -40,3 +40,5 @@ The  pg_restore can take a database-backed up in the older version and restore i
 
 -- Second, restore the table structure only from the dvdrental.tar backup file by using the following command:
 -- pg_restore --dbname=new_dvdrental --section=pre-data dvdrental.tar
+
+-- pg_restore -h localhost -p 5432 -U postgres -d db_graphql_relay -v dvdrental.tar
