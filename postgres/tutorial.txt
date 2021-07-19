@@ -1,1 +1,16 @@
 https://www.postgresqltutorial.com/
+
+check port use by programe
+
+1. sudo lsof -i :5432
+
+2. kill -9 <PID>
+
+----------
+brew 
+install: brew install postgres
+uninstall: brew uninstall postgres
+
+start: brew services start postgresql
+stop: brew services stop postgresql
+
