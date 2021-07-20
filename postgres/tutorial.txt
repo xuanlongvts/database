@@ -14,3 +14,9 @@ uninstall: brew uninstall postgres
 start: brew services start postgresql
 stop: brew services stop postgresql
 
+================================
+psql: FATAL: role “postgres” does not exist
+
+1.  psql -l
+2.	psql postgres
+3. CREATE USER postgres SUPERUSER;
