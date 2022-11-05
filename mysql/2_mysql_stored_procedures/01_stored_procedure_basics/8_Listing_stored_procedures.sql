@@ -1,0 +1,9 @@
+SHOW PROCEDURE STATUS;
+
+SHOW PROCEDURE STATUS WHERE db = 'classicmodels';
+
+SHOW PROCEDURE STATUS LIKE '%Order%';
+
+SELECT routine_name
+FROM information_schema.`ROUTINES`
+WHERE `ROUTINE_TYPE` = 'PROCEDURE' and `ROUTINE_SCHEMA` = 'classicmodels';

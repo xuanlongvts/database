@@ -1,0 +1,14 @@
+DELIMITER$$
+    CREATE PROCEDURE sp_name()
+    BEGIN
+         SELECT * FROM products;
+    END$$
+DELIMITER;
+
+CALL sp_name();
+
+DROP PROCEDURE IF EXISTS sp_name;
+
+DROP PROCEDURE sp_name;
+
+SHOW WARNINGS;
