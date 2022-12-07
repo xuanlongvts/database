@@ -4,4 +4,4 @@ SELECT NOW()
 
 SELECT CONCAT("Le", " ", "Xuan", " ", "Le")
 
-SELECT CONCAT("Le", " ", "Xuan", " ", "Le") AS "Full name"
+SELECT CONCAT("Le", " ", "Xuan", " ", "Long") AS "Full name"
