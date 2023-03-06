@@ -20,3 +20,22 @@ psql: FATAL: role “postgres” does not exist
 1.  psql -l
 2.	psql postgres
 3. CREATE USER postgres SUPERUSER;
+
+
+---------
+On Ubuntu
+https://itslinuxfoss.com/fix-postgresql-password-authentication-failed-for-user/
+https://chartio.com/resources/tutorials/how-to-set-the-default-user-password-in-postgresql/
+
+1. su - postgres
+2. sudo passwd postgres
+    enter new password:
+    Retype new password:
+
+3. su - postgres
+4. psql
+5. postgres=# ALTER USER postgres PASSWORD 'longlx_123';
+6. sudo service postgresql restart
+7. Use PgAdmin or DBeaver to connect with 
+    account: postgres
+    password: longlx_123
