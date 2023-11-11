@@ -21,6 +21,9 @@
     after install, we have an error when login:  sudo mysql
     ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
 
+    mysql -u root -p     enter and type password
+    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '12345678';
+
 ##### Setting up a password for the root account
 
     1. sudo mysql
